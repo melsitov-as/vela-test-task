@@ -1,0 +1,47 @@
+@use '../global.scss';
+
+.header-menu {
+  display: grid;
+  grid-template-rows: 26px 76px 70px;
+  grid-template-columns: 46px 40px 156px 40px 46px;
+}
+
+.header-menu__location {
+  display: none;
+}
+
+.header-menu__schedule {
+  display: none;
+}
+
+.header-menu__links-list {
+  display: none;
+}
+
+.header-menu__language-item-bar {
+  color: global.$basic-black;
+}
+
+.header-menu__language-button {
+  display: inline-block;
+  font-family: global.$arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: global.$basic-black-transparent-1;
+  text-decoration: none;
+}
+
+.header-menu__language-button--active {
+  color: global.$basic-black;
+}
+
+.header-menu__language-item-bar {
+  color: global.$basic-black;
+}
+
+.header-menu__phone {
+  display: inline-block;
+  font-family: global.$arial;
+  text-decoration: none;
+}

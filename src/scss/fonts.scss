@@ -1,0 +1,19 @@
+// @font-face {
+//   font-family: 'Maza Regular';
+//   font-display: swap;
+//   src: url('../fonts/maza-regular.woff2') format('woff2'),
+//     url('../fonts/maza-regular.woff') format('woff');
+// }
+
+@font-face {
+  font-family: 'Maza';
+  font-display: swap;
+  src: url('../fonts/maza-regular.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Tenor Sans Regular';
+  font-display: swap;
+  src: url('../fonts/tenor-sans-regular.woff2') format('woff2'),
+    url('../fonts/tenor-sans-regular.woff') format('woff');
+}

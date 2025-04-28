@@ -1,0 +1,29 @@
+@use 'fonts.scss';
+
+$maza: 'Maza';
+$tenor-sans-regular: 'Tenor Sans Regular';
+$arial: 'Arial';
+
+$basic-white: #ffffff;
+$basic-black: #343a3f;
+$basic-black-transparent-1: rgba(52, 58, 63, 0.4);
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
