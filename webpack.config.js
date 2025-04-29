@@ -62,7 +62,7 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/images/[name].[ext]', // Путь и имя для выходных файлов
+          filename: 'img/[name].[ext]', // Путь и имя для выходных файлов
         },
       },
       // Обработка шрифтов (опционально)
@@ -82,6 +82,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html', // Путь к вашему HTML шаблону
       filename: 'index.html', // Имя выходного HTML файла
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/menu-mobile.html', // Путь к вашему HTML шаблону
+      filename: 'menu-mobile.html', // Имя выходного HTML файла
     }),
     // Плагин для извлечения CSS в отдельные файлы
     new MiniCssExtractPlugin({

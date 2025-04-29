@@ -1,9 +1,71 @@
+@use '../global.scss';
+
 .header {
   width: 360px;
   margin: 0 auto;
 }
 
-.header__container {
-  width: 328px;
+.header__promo {
+  padding: 30px 0 186px;
+  background: url(../img/gamepad-image.png) 180px 195px no-repeat,
+    linear-gradient(
+      115deg,
+      global.$gradient-1 0%,
+      global.$gradient-1 35%,
+      global.$gradient-2 77%,
+      global.$gradient-2 89%,
+      global.$gradient-3 95%,
+      global.$gradient-3 100%
+    );
+  background-size: 110%, auto;
+}
+
+.header__promo-container {
+  width: 332px;
   margin: 0 auto;
+}
+
+.header__promo-title {
+  margin: 0;
+  padding: 0;
+}
+
+.header__promo-title {
+  margin-bottom: 12px;
+  font-family: global.$tenor-sans-regular;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  color: global.$basic-white;
+}
+
+.header__promo-text {
+  margin: 0 0 26px 0;
+  padding: 0;
+  font-family: global.$tenor-sans-regular;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: global.$basic-white;
+}
+
+.header__promo-text-desktop-view {
+  display: none;
+}
+
+.header__promo-button {
+  display: block;
+  display: flex;
+  justify-content: center;
+  padding: 17px 0;
+  margin-left: 2px;
+  width: 148px;
+  border-radius: 8px;
+  background: global.$basic-white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: #753d7e;
 }

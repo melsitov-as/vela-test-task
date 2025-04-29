@@ -7,6 +7,18 @@ $arial: 'Arial';
 $basic-white: #ffffff;
 $basic-black: #343a3f;
 $basic-black-transparent-1: rgba(52, 58, 63, 0.4);
+$basic-grey: #f4f4f4;
+$basic-blue: #4888ff;
+$basic-blue-transparent-1: rgba(72, 136, 255, 0.2);
+$border-grey: #d3d3d3;
+$gradient-1: #753d7e;
+$gradient-2: #5aacd4;
+$gradient-3: #59b2dc;
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 ul,
 li {
