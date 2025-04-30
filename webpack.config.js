@@ -5,16 +5,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   mode: 'development',
 
-  // entry: './src/index.js',
-
   entry: {
     main: './src/index.js',
-    menuDtScroll: './src/js/scroll-script.js', // Предполагаемое имя вашего второго файла
-    // ... другие точки входа
+    menuDtScroll: './src/js/scroll-script.js',
   },
 
   output: {
-    filename: '[name].bundle.js', // Используем [name] для динамического имени файла
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -67,7 +64,6 @@ module.exports = {
     ],
   },
 
-  // Плагины
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
