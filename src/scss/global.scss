@@ -1,6 +1,5 @@
 @use 'fonts.scss';
 
-$maza: 'Maza';
 $tenor-sans-regular: 'Tenor Sans Regular';
 $arial: 'Arial';
 
@@ -51,7 +50,6 @@ li {
 .sticky {
   position: fixed;
   z-index: 100;
-  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .white {

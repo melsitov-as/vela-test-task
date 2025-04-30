@@ -31,7 +31,6 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-  //   padding: 12px 17px 12px 0;
   padding: 20px 0;
   box-sizing: border-box;
 }
@@ -45,10 +44,6 @@
   font-size: 15px;
   color: global.$basic-black;
 }
-
-// .offers-popup__item-link:hover .offers-popup__item-text {
-//   color: global.$basic-blue;
-// }
 
 .offers-popup__item:hover {
   background: global.$basic-grey;
