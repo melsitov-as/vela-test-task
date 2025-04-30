@@ -7,7 +7,9 @@ $arial: 'Arial';
 $basic-white: #ffffff;
 $basic-black: #343a3f;
 $basic-black-transparent-1: rgba(52, 58, 63, 0.4);
+$basic-black-transparent-2: rgba(52, 58, 63, 0.5);
 $basic-grey: #f4f4f4;
+$basic-dark-grey: #e8e8e8;
 $basic-blue: #4888ff;
 $basic-blue-transparent-1: rgba(72, 136, 255, 0.2);
 $border-grey: #d3d3d3;
@@ -15,7 +17,10 @@ $gradient-1: #753d7e;
 $gradient-2: #5aacd4;
 $gradient-3: #59b2dc;
 
+$desktop-width: 1440px;
+
 body {
+  min-width: 360px;
   margin: 0;
   padding: 0;
 }

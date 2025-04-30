@@ -1,0 +1,41 @@
+@use '../global.scss';
+
+.sections-buttons-list {
+  width: 328px;
+  margin: 0 auto 22px;
+}
+
+.sections-buttons-list__item + .sections-buttons-list__item {
+  margin-top: 10px;
+}
+
+.sections-buttons-list__button {
+  width: 328px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: global.$basic-grey;
+  text-decoration: none;
+  padding: 17px 17px 17px 14px;
+  box-sizing: border-box;
+}
+
+.sections-buttons-list__item:not(.sections-buttons-list__item:first-child)
+  .sections-buttons-list__button {
+  padding: 12px 17px 12px 14px;
+}
+
+.sections-buttons-list__text {
+  margin-left: 15px;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: global.$basic-black;
+}
+
+.sections-buttons-list__arrow {
+  margin-left: auto;
+}
