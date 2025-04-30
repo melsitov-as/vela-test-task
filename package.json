@@ -12,8 +12,7 @@
     "webpack",
     "html",
     "scss",
-    "javascript",
-    "react"
+    "javascript"
   ],
   "author": "",
   "license": "ISC",
