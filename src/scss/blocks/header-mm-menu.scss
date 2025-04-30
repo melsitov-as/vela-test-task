@@ -385,46 +385,6 @@
   color: global.$basic-black;
 }
 
-.header-mm-menu__catalogue-list {
-  width: 328px;
-  margin: 0 auto 22px;
-}
-
-.header-mm-menu__catalogue-item + .header-mm-menu__catalogue-item {
-  margin-top: 10px;
-}
-
-.header-mm-menu__catalogue-link {
-  width: 328px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: global.$basic-grey;
-  text-decoration: none;
-  padding: 12px 17px 12px 14px;
-  box-sizing: border-box;
-}
-
-// .header-mm-menu__catalogue-item:not(.header-mm-menu__catalogue-item:first-child)
-//   .header-mm-menu__catalogue-link {
-//   padding: 12px 17px 12px 14px;
-// }
-
-.header-mm-menu__catalogue-text {
-  margin-left: 15px;
-  display: inline-block;
-  font-family: Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  color: global.$basic-black;
-}
-
-.header-mm-menu__catalogue-arrow {
-  margin-left: auto;
-}
-
 // smartphones
 .header-mm-menu__smartphones-title-container {
   width: 328px;

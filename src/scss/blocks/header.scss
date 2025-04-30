@@ -4,9 +4,9 @@
   width: 360px;
   margin: 0 auto;
 
-  // @media (min-width: global.$desktop-width) {
-  //   width: 1440px;
-  // }
+  @media (min-width: global.$desktop-width) {
+    width: 1440px;
+  }
 }
 
 .header__promo {
@@ -23,29 +23,29 @@
     );
   background-size: 110%, auto;
 
-  // @media (min-width: global.$desktop-width) {
-  //   padding: 85px 0 81px;
-  //   background: url(../img/gamepad-image-desktop.png) 874px 0 no-repeat,
-  //     linear-gradient(
-  //       115deg,
-  //       global.$gradient-1 0%,
-  //       global.$gradient-1 35%,
-  //       global.$gradient-2 77%,
-  //       global.$gradient-2 85%,
-  //       global.$gradient-3 90%,
-  //       global.$gradient-3 100%
-  //     );
-  //   background-size: auto, auto;
-  // }
+  @media (min-width: global.$desktop-width) {
+    padding: 85px 0 81px;
+    background: url(../img/gamepad-image-desktop.png) 874px 0 no-repeat,
+      linear-gradient(
+        115deg,
+        global.$gradient-1 0%,
+        global.$gradient-1 35%,
+        global.$gradient-2 77%,
+        global.$gradient-2 85%,
+        global.$gradient-3 90%,
+        global.$gradient-3 100%
+      );
+    background-size: auto, auto;
+  }
 }
 
 .header__promo-container {
   width: 332px;
   margin: 0 auto;
 
-  // @media (min-width: global.$desktop-width) {
-  //   width: 1358px;
-  // }
+  @media (min-width: global.$desktop-width) {
+    width: 1358px;
+  }
 }
 
 .header__promo-title {
@@ -61,11 +61,11 @@
   font-weight: 400;
   color: global.$basic-white;
 
-  // @media (min-width: global.$desktop-width) {
-  //   font-size: 32px;
-  //   width: 729px;
-  //   margin: 0 0 25px 58px;
-  // }
+  @media (min-width: global.$desktop-width) {
+    font-size: 32px;
+    width: 729px;
+    margin: 0 0 25px 58px;
+  }
 }
 
 .header__promo-text-mobile {
@@ -77,26 +77,26 @@
   font-weight: 400;
   color: global.$basic-white;
 
-  // @media (min-width: global.$desktop-width) {
-  //   display: none;
-  // }
+  @media (min-width: global.$desktop-width) {
+    display: none;
+  }
 }
 
 .header__promo-text-desktop {
   display: none;
 
-  // @media (min-width: global.$desktop-width) {
-  //   display: block;
-  //   margin: 0 0 24px 58px;
-  //   width: 639px;
-  //   padding: 0;
-  //   font-family: global.$tenor-sans-regular;
-  //   font-style: normal;
-  //   font-size: 18px;
-  //   font-weight: 400;
-  //   color: global.$basic-white;
-  //   line-height: 24px;
-  // }
+  @media (min-width: global.$desktop-width) {
+    display: block;
+    margin: 0 0 24px 58px;
+    width: 639px;
+    padding: 0;
+    font-family: global.$tenor-sans-regular;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    color: global.$basic-white;
+    line-height: 24px;
+  }
 }
 
 .header__promo-text-desktop-view {
@@ -119,11 +119,11 @@
   font-weight: 400;
   color: #753d7e;
 
-  // @media (min-width: global.$desktop-width) {
-  //   margin: 0 0 0 58px;
-  //   width: 150px;
-  //   padding: 18px 0;
-  // }
+  @media (min-width: global.$desktop-width) {
+    margin: 0 0 0 58px;
+    width: 150px;
+    padding: 18px 0;
+  }
 }
 
 .header__assemble-comp-button {
@@ -170,4 +170,8 @@
   font-size: 15px;
   color: global.$basic-black;
   text-decoration: none;
+}
+
+.header--pad-bottom-1500 {
+  height: 1500px;
 }

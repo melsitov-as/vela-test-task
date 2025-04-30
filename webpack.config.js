@@ -9,6 +9,11 @@ module.exports = {
   // Входная точка вашего приложения
   entry: './src/index.js',
 
+  // entry: {
+  //   main: './src/index.js', // Для основной части сайта
+  //   menuDtScroll: './src/js/scroll-script.js', // JavaScript, специфичный для главной страницы
+  // },
+
   // Выходные настройки
   output: {
     filename: 'bundle.js', // Имя выходного JavaScript-файла
@@ -98,6 +103,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/mobile-menu-4lvl.html', // Путь к вашему HTML шаблону
       filename: 'mobile-menu-4lvl.html', // Имя выходного HTML файла
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/menu-dt-catalogue.html', // Путь к вашему HTML шаблону
+      filename: 'menu-dt-catalogue.html', // Имя выходного HTML файла
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/menu-dt-offers.html', // Путь к вашему HTML шаблону
+      filename: 'menu-dt-offers.html', // Имя выходного HTML файла
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/menu-dt-scroll.html', // Путь к вашему HTML шаблону
+      filename: 'menu-dt-scroll.html', // Имя выходного HTML файла
     }),
     // Плагин для извлечения CSS в отдельные файлы
     new MiniCssExtractPlugin({
