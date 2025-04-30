@@ -87,6 +87,10 @@ module.exports = {
       template: './src/header-menu.html', // Путь к вашему HTML шаблону
       filename: 'header-menu.html', // Имя выходного HTML файла
     }),
+    new HtmlWebpackPlugin({
+      template: './src/mobile-menu-2lvl.html', // Путь к вашему HTML шаблону
+      filename: 'mobile-menu-2lvl.html', // Имя выходного HTML файла
+    }),
     // Плагин для извлечения CSS в отдельные файлы
     new MiniCssExtractPlugin({
       filename: 'styles.css', // Имя выходного CSS файла
