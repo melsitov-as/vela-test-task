@@ -357,6 +357,10 @@
   color: global.$basic-blue;
 }
 
+.header-mm-menu__catalogue-link:hover .header-mm-menu__catalogue-arrow path {
+  stroke: global.$basic-blue;
+}
+
 .header-mm-menu__catalogue-arrow {
   margin-left: auto;
 }

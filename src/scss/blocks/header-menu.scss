@@ -470,6 +470,10 @@
   }
 }
 
+.header-menu__search-input:focus {
+  outline: none;
+}
+
 .header-menu__search-input::placeholder {
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -545,7 +549,7 @@
   }
 }
 
-.header-menu__social-icon:hover path {
+.header-menu__social-link:hover .header-menu__social-icon path {
   fill: global.$basic-blue;
 }
 

@@ -19,18 +19,10 @@
   margin: 0 0 22px 0;
 }
 
-.offers-popup__item + .offers-popup__item {
-  margin-top: 8px;
-}
-
 .offers-popup__item {
   padding-left: 32px;
   box-sizing: border-box;
   border-bottom: 1px solid global.$background-grey;
-}
-
-.offers-popup__item--active {
-  background: global.$background-grey;
 }
 
 .offers-popup__item-link {
@@ -40,7 +32,7 @@
   align-items: center;
   text-decoration: none;
   //   padding: 12px 17px 12px 0;
-  padding: 12px 0;
+  padding: 20px 0;
   box-sizing: border-box;
 }
 
@@ -54,8 +46,12 @@
   color: global.$basic-black;
 }
 
-.offers-popup__item-link:hover .offers-popup__item-text {
-  color: global.$basic-blue;
+// .offers-popup__item-link:hover .offers-popup__item-text {
+//   color: global.$basic-blue;
+// }
+
+.offers-popup__item:hover {
+  background: global.$basic-grey;
 }
 
 .offers-popup__item-arrow {

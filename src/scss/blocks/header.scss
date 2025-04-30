@@ -148,6 +148,18 @@
   color: global.$basic-blue;
 }
 
+.header__assemble-comp-button:hover {
+  background: global.$basic-blue;
+}
+
+.header__assemble-comp-button:hover .header__assemble-comp-button-text {
+  color: global.$basic-white;
+}
+
+.header__assemble-comp-button:hover .header__assemble-comp-button-icon path {
+  stroke: global.$basic-white;
+}
+
 .header__links-list {
   width: 328px;
   margin: 0 auto;
@@ -170,6 +182,10 @@
   font-size: 15px;
   color: global.$basic-black;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: global.$basic-blue;
 }
 
 .header--pad-bottom-1500 {

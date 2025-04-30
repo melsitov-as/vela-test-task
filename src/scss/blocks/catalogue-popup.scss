@@ -19,17 +19,13 @@
   margin: 0 0 22px 0;
 }
 
-.catalogue-popup__item + .catalogue-popup__item {
-  margin-top: 8px;
-}
-
 .catalogue-popup__item {
   padding-left: 32px;
   box-sizing: border-box;
   border-bottom: 1px solid global.$background-grey;
 }
 
-.catalogue-popup__item--active {
+.catalogue-popup__item:hover {
   background: global.$background-grey;
 }
 
@@ -40,7 +36,7 @@
   align-items: center;
   text-decoration: none;
   //   padding: 12px 17px 12px 0;
-  padding: 12px 0;
+  padding: 20px 0;
   box-sizing: border-box;
 }
 
@@ -52,10 +48,6 @@
   font-weight: 400;
   font-size: 15px;
   color: global.$basic-black;
-}
-
-.catalogue-popup__item-link:hover .catalogue-popup__item-text {
-  color: global.$basic-blue;
 }
 
 .catalogue-popup__item-arrow {
@@ -125,6 +117,10 @@
   color: global.$basic-blue;
 }
 
+.catalogue-popup__smartphones-item:hover .catalogue-popup__smartphones-count {
+  color: global.$basic-blue;
+}
+
 .catalogue-popup__smartphones-item:hover
   .catalogue-popup__smartphones-arrow
   path {
@@ -189,6 +185,10 @@
 }
 
 .catalogue-popup__gadgets-item:hover .catalogue-popup__gadgets-text {
+  color: global.$basic-blue;
+}
+
+.catalogue-popup__gadgets-item:hover .catalogue-popup__gadgets-count {
   color: global.$basic-blue;
 }
 

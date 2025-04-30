@@ -3,36 +3,31 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  // Режим сборки: development или production
-  mode: 'development', // или 'production' для production-сборки
+  mode: 'development',
 
-  // Входная точка вашего приложения
-  entry: './src/index.js',
+  // entry: './src/index.js',
 
-  // entry: {
-  //   main: './src/index.js', // Для основной части сайта
-  //   menuDtScroll: './src/js/scroll-script.js', // JavaScript, специфичный для главной страницы
-  // },
+  entry: {
+    main: './src/index.js',
+    menuDtScroll: './src/js/scroll-script.js', // Предполагаемое имя вашего второго файла
+    // ... другие точки входа
+  },
 
-  // Выходные настройки
   output: {
-    filename: 'bundle.js', // Имя выходного JavaScript-файла
-    path: path.resolve(__dirname, 'dist'), // Путь к выходной директории
-    clean: true, // Очищать выходную директорию перед каждой сборкой
+    filename: '[name].bundle.js', // Используем [name] для динамического имени файла
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 
-  // Настройки devServer для разработки
   devServer: {
-    static: './src', // Корневая директория для статического контента
-    // static: './dist', // Корневая директория для статического контента
-    port: 8080, // Порт devServer
-    open: true, // Автоматически открывать браузер после запуска
+    // static: './src',
+    static: './dist',
+    port: 8080,
+    open: true,
   },
 
-  // Модули (loaders) для обработки различных типов файлов
   module: {
     rules: [
-      // Обработка JavaScript файлов
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -43,34 +38,25 @@ module.exports = {
           },
         },
       },
-      // Обработка SCSS файлов
       {
         test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader, // Extract CSS to separate files
-          'css-loader', // Translates CSS into CommonJS
-          'sass-loader', // Compiles Sass to CSS
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
-      // Обработка CSS файлов (если есть отдельные CSS)
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
-      // Обработка HTML файлов
       {
         test: /\.html$/,
         use: ['html-loader'],
       },
-      // Обработка изображений и других статических активов (опционально)
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'img/[name].[ext]', // Путь и имя для выходных файлов
+          filename: 'img/[name].[ext]',
         },
       },
-      // Обработка шрифтов (опционально)
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
@@ -83,45 +69,47 @@ module.exports = {
 
   // Плагины
   plugins: [
-    // Плагин для генерации HTML файла
     new HtmlWebpackPlugin({
-      template: './src/index.html', // Путь к вашему HTML шаблону
-      filename: 'index.html', // Имя выходного HTML файла
+      template: './src/index.html',
+      filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/header-menu.html', // Путь к вашему HTML шаблону
-      filename: 'header-menu.html', // Имя выходного HTML файла
+      template: './src/mobile-menu.html',
+      filename: 'mobile-menu.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/mobile-menu-2lvl.html', // Путь к вашему HTML шаблону
-      filename: 'mobile-menu-2lvl.html', // Имя выходного HTML файла
+      template: './src/mobile-menu-2lvl.html',
+      filename: 'mobile-menu-2lvl.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/mobile-menu-3lvl.html', // Путь к вашему HTML шаблону
-      filename: 'mobile-menu-3lvl.html', // Имя выходного HTML файла
+      template: './src/mobile-menu-3lvl.html',
+      filename: 'mobile-menu-3lvl.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/mobile-menu-4lvl.html', // Путь к вашему HTML шаблону
-      filename: 'mobile-menu-4lvl.html', // Имя выходного HTML файла
+      template: './src/mobile-menu-4lvl.html',
+      filename: 'mobile-menu-4lvl.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/menu-dt-catalogue.html', // Путь к вашему HTML шаблону
-      filename: 'menu-dt-catalogue.html', // Имя выходного HTML файла
+      template: './src/menu-dt-catalogue.html',
+      filename: 'menu-dt-catalogue.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/menu-dt-offers.html', // Путь к вашему HTML шаблону
-      filename: 'menu-dt-offers.html', // Имя выходного HTML файла
+      template: './src/menu-dt-offers.html',
+      filename: 'menu-dt-offers.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/menu-dt-scroll.html', // Путь к вашему HTML шаблону
-      filename: 'menu-dt-scroll.html', // Имя выходного HTML файла
+      template: './src/menu-dt-events.html',
+      filename: 'menu-dt-events.html',
     }),
-    // Плагин для извлечения CSS в отдельные файлы
+    new HtmlWebpackPlugin({
+      template: './src/menu-dt-scroll.html',
+      filename: 'menu-dt-scroll.html',
+    }),
+
     new MiniCssExtractPlugin({
-      filename: 'styles.css', // Имя выходного CSS файла
+      filename: 'styles.css',
     }),
   ],
 
-  // Настройки для source maps (для облегчения отладки)
-  devtool: 'inline-source-map', // Рекомендуется для разработки
+  devtool: 'inline-source-map',
 };

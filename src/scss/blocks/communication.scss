@@ -47,3 +47,15 @@
   background: global.$basic-grey;
   border-radius: 5px;
 }
+
+.communication__social-item:hover .communication__social-icon path {
+  fill: global.$basic-blue;
+}
+
+.sections-buttons-list__button:hover .sections-buttons-list__text {
+  color: global.$basic-blue;
+}
+
+.sections-buttons-list__button:hover .sections-buttons-list__arrow path {
+  stroke: global.$basic-blue;
+}

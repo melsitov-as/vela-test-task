@@ -11,11 +11,9 @@ const contentContainer = document.querySelector(
 
 const stickyClass = 'sticky';
 const whiteClass = 'white';
-const scrollThreshold = 5; // На каком расстоянии от верха начинать "прилипание"
+const scrollThreshold = 5;
 
-window.addEventListener('scroll', (evt) => {
-  //   header.classList.add(stickyClass);
-
+window.addEventListener('scroll', () => {
   if (window.scrollY > scrollThreshold) {
     headerScrollMenu.classList.add(stickyClass);
     headerScrollMenu.classList.add(whiteClass);
