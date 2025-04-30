@@ -136,6 +136,10 @@
   background: global.$basic-dark-grey;
 }
 
+.header-mm-menu__button--opened:hover svg path {
+  stroke: global.$basic-blue;
+}
+
 .header-mm-menu__button svg {
 }
 
@@ -155,6 +159,10 @@
   //   grid-column: 3/4;
   //   align-self: start;
   // }
+}
+
+.header-mm-menu__search-form:hover {
+  border: 1px solid global.$basic-blue;
 }
 
 .header-mm-menu__search-input {
@@ -285,6 +293,82 @@
   align-items: center;
 }
 
+.header-mm-menu__catalogue-prev-link {
+  text-decoration: none;
+}
+
+.header-mm-menu__prev-link:hover svg path {
+  stroke: global.$basic-blue;
+}
+
+.header-mm-menu__prev-link-icon {
+  display: inline-block;
+  margin-left: 8px;
+  transform: rotate(180deg);
+}
+
+.header-mm-menu__catalogue-title {
+  margin: 2px 0 0 36px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: global.$basic-black;
+}
+
+.header-mm-menu__catalogue-list {
+  width: 328px;
+  margin: 0 auto 22px;
+}
+
+.header-mm-menu__catalogue-item + .header-mm-menu__catalogue-item {
+  margin-top: 10px;
+}
+
+.header-mm-menu__catalogue-link {
+  width: 328px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: global.$basic-grey;
+  text-decoration: none;
+  padding: 12px 17px 12px 14px;
+  box-sizing: border-box;
+}
+
+// .header-mm-menu__catalogue-item:not(.header-mm-menu__catalogue-item:first-child)
+//   .header-mm-menu__catalogue-link {
+//   padding: 12px 17px 12px 14px;
+// }
+
+.header-mm-menu__catalogue-text {
+  margin-left: 15px;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: global.$basic-black;
+}
+
+.header-mm-menu__catalogue-link:hover .header-mm-menu__catalogue-text {
+  color: global.$basic-blue;
+}
+
+.header-mm-menu__catalogue-arrow {
+  margin-left: auto;
+}
+
+.header-mm-menu__catalogue-title-container {
+  width: 328px;
+  margin: 0 auto 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .header-mm-menu__catalogue-title-icon {
   display: inline-block;
   margin-left: 8px;
@@ -339,4 +423,169 @@
 
 .header-mm-menu__catalogue-arrow {
   margin-left: auto;
+}
+
+// smartphones
+.header-mm-menu__smartphones-title-container {
+  width: 328px;
+  margin: 0 auto 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-mm-menu__smartphones-title-icon {
+  display: inline-block;
+  margin-left: 8px;
+  transform: rotate(180deg);
+}
+
+.header-mm-menu__smartphones-title {
+  margin: 2px 0 0 36px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: global.$basic-black;
+}
+
+.header-mm-menu__smartphones-list {
+  width: 328px;
+  margin: 0 auto 22px;
+}
+
+.header-mm-menu__smartphones-item + .header-mm-menu__smartphones-item {
+  margin-top: 11px;
+}
+
+.header-mm-menu__smartphones-link {
+  width: 328px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: global.$basic-grey;
+  text-decoration: none;
+  padding: 12px 17px 17px 14px;
+  box-sizing: border-box;
+}
+
+// .header-mm-menu__smartphones-item:not(.header-mm-menu__smartphones-item:first-child)
+//   .header-mm-menu__smartphones-link {
+//   padding: 12px 17px 12px 14px;
+// }
+
+.header-mm-menu__smartphones-text {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: global.$basic-black;
+}
+
+.header-mm-menu__smartphones-count {
+  margin-left: 10px;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: global.$basic-black-transparent-2;
+}
+
+.header-mm-menu__smartphones-arrow {
+  margin-left: auto;
+}
+
+.header-mm-menu__smartphones-item:hover .header-mm-menu__smartphones-text {
+  color: global.$basic-blue;
+}
+
+.header-mm-menu__smartphones-item:hover
+  .header-mm-menu__smartphones-arrow
+  path {
+  stroke: global.$basic-blue;
+}
+// gadgets
+.header-mm-menu__gadgets-title-container {
+  width: 328px;
+  margin: 0 auto 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-mm-menu__gadgets-title-icon {
+  display: inline-block;
+  margin-left: 8px;
+  transform: rotate(180deg);
+}
+
+.header-mm-menu__gadgets-title {
+  margin: 2px 0 0 36px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: global.$basic-black;
+}
+
+.header-mm-menu__gadgets-list {
+  width: 328px;
+  margin: 0 auto 22px;
+}
+
+.header-mm-menu__gadgets-item + .header-mm-menu__gadgets-item {
+  margin-top: 11px;
+}
+
+.header-mm-menu__gadgets-link {
+  width: 328px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: global.$basic-grey;
+  text-decoration: none;
+  padding: 12px 17px 17px 14px;
+  box-sizing: border-box;
+}
+
+// .header-mm-menu__gadgets-item:not(.header-mm-menu__gadgets-item:first-child)
+//   .header-mm-menu__gadgets-link {
+//   padding: 12px 17px 12px 14px;
+// }
+
+.header-mm-menu__gadgets-text {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: global.$basic-black;
+}
+
+.header-mm-menu__gadgets-count {
+  margin-left: 10px;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: global.$basic-black-transparent-2;
+}
+
+.header-mm-menu__gadgets-arrow {
+  margin-left: auto;
+}
+
+.header-mm-menu__gadgets-item:hover .header-mm-menu__gadgets-text {
+  color: global.$basic-blue;
+}
+
+.header-mm-menu__gadgets-item:hover .header-mm-menu__gadgets-arrow path {
+  stroke: global.$basic-blue;
 }
