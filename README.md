@@ -2,7 +2,25 @@
 
 ## Описание
 
-Проект `vela-test-task` представляет тестовое задание для компании Vela
+Проект `vela-test-task` представляет собой тестовое задание для компании Vela.
+Верстка шапки сайта с адаптивностью и скроллом.
+
+## URLs
+"https://melsitov-as.github.io/vela-test-task"
+"https://melsitov-as.github.io/vela-test-task/menu-dt-catalogue.html"
+"https://melsitov-as.github.io/vela-test-task/menu-dt-events.html"
+"https://melsitov-as.github.io/vela-test-task/menu-dt-offers.html"
+"https://melsitov-as.github.io/vela-test-task/menu-dt-scroll.html"
+"https://melsitov-as.github.io/vela-test-task/mobile-menu.html"
+"https://melsitov-as.github.io/vela-test-task/mobile-menu-2lvl.html"
+"https://melsitov-as.github.io/vela-test-task/mobile-menu-3lvl.html"
+"https://melsitov-as.github.io/vela-test-task/mobile-menu-4lvl.html"
+
+## Примечание
+Адаптивная верстка сделана на главной странице.
+Скролл сделан на странице menu-dt-scroll.html на js.
+Остальные страницы сделаны по-отдельности
+
 ## Установка и запуск
 
 1.  **Клонируйте репозиторий:**
